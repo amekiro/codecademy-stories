@@ -15,12 +15,14 @@
     <img class='opcl' id='open' src='https://content.codecademy.com/projects/z2d/stories/menu-white.svg' />
     <img class='opcl hide' id='close' src='https://content.codecademy.com/projects/z2d/stories/close-white.svg' />
     <ul>
-      <li>Home</li>
-      <li>About</li>
+      <li><%= link_to "Home", home_path() %></li>
+      <li><%= link_to "About", about_path() %></li>
     </ul>
   </nav>
   <body>
     <%= yield %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
+  <footer>
+  </footer>
 </html>
