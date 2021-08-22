@@ -6,12 +6,20 @@
 <div class= 'sec'>
     <h1>I pledge to be Miso's #1 fan!</h1>
     <%= form_with model: @signup do |f| %>
-        <%= f.label :"First Name" %>
-        <%= f.text_field :firstname %>
-        <br />
-        <%= f.label :"Email Address" %>
-        <%= f.text_field :email %>
-        <br />
-        <%= f.submit "Submit" %>
+        <table>
+            <tbody>
+                <tr>
+                    <td><%= f.label :"First Name" %></td>
+                    <td><%= f.text_field :firstname %></td>
+                </tr>
+                <tr>
+                    <td><%= f.label :"Email Address" %></td>
+                    <td><%= f.text_field :email %></td>
+                </tr>
+                <tr>
+                    <td colspan=2><%= f.submit "Submit" %></td>
+                </tr>
+            </tbody>
+        </table>
     <% end %>
 </div>

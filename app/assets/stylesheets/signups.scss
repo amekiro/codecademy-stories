@@ -1,3 +1,16 @@
 // Place all the styles related to the Signups controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.sec table {
+    margin: auto;
+}
+
+.sec table td {
+    padding: 5px 8px;
+    text-align: left;
+}
+
+.sec table input[type=submit] {
+    width: 100%;
+}
