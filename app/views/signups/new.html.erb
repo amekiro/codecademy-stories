@@ -1,0 +1,17 @@
+<div id='main' style='background-image: url("https://lh3.googleusercontent.com/EnJYfF-ZxnjTADjtp1_odXLx1Ae2ZIb9Hg1rK8MTagP614_QZm5HOTrM7vbETmYuxjqkWTjWzazpnjqXPu2UXM699R8ls9-XqMKp01wLCGLL60QDfc4-sqyLbdrt_dvKnmnWrNJUtFfM_dDc-7LjAo9qMe88taIP6YLSgrqvGONoblQKo4aYiNY_nh2TfV7oLSwXN4NCtyz7eKAb9BRcqBkXZz-7FmPbTbbtUxzfYLKsZZNFXq3I4-v8xh2MkNyyLlv5EWWjVzQ-NmAgWRsboF7TJnooHh9AybIezeG1O-Ruo9fFNrTyyqyOgp-u9jfNbRiMPvTWejr7A5Sj7VwsYvchhYRZgrT0cq5XFSI4HweSf8wJfQAh7vYPSInwYGA5SNBd8Fm6hQl1q55me5TCXg0-9rWjDQbGmoi-yiq9CoeO_JAEV70PIGcwnTMQWjll_T7ttlta7fJW7J8UGdgnJXx1iQJ0r7y76Mngio4stvLTmLZXMlqkNQzVzlyDwAJAgrynKcxpb5ya-lnl8Ajwjkl3cix-62J_jOCEWvx0VpHMUPr0FDa57tevgd0AyTLUgpR8KS9ta_JqaimZKc91G1eYuquvYSuwO1qaotcov9pgfThj704iC4BTcFrpRzH5mFGDVADOQdVNQuyLB9qqDR5HFUemRjlNWhkNvimTIzl_9TRbpeYUB3zb3mn7vhuDMSb7GPgEiBofhMFt1O8SApkFxw=w1174-h880-no?authuser=0")'>
+    <div id='welcome-frame'>
+        <div id='welcome'>Join the Miso pack!</div>
+    </div>
+</div>
+<div class= 'sec'>
+    <h1>I pledge to be Miso's #1 fan!</h1>
+    <%= form_with model: @signup do |f| %>
+        <%= f.label :"First Name" %>
+        <%= f.text_field :firstname %>
+        <br />
+        <%= f.label :"Email Address" %>
+        <%= f.text_field :email %>
+        <br />
+        <%= f.submit "Submit" %>
+    <% end %>
+</div>
