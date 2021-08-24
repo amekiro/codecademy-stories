@@ -1,0 +1,25 @@
+// Place all the styles related to the Gallery controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#gallery img {
+    height: 150px;
+    float: left;
+    margin: 15px;
+}
+
+#img-frame {
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#img-frame img {
+    margin: auto;
+    height: 100%;
+}
+
+#description {
+    text-align: center;
+}

@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get '/new' => 'signups#new', as: :sign
   post 'signups' => 'signups#create'
   get '/thanks' => 'pages#thanks', as: :thanks
+  resources :gallery
+  get '/gallery' => 'gallery#index'
+  get '/gallery/:id' => 'gallery#show'
 end

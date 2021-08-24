@@ -8,10 +8,11 @@
     <h1>Come join us in Miso's splootastic glory!</h1>
     <h2>Miso can hold over 100 different sleeping positions through a night. How many can you hold?</h2>
     <div id='sleep'>
+        Here are the inputs from our visitors! 
         <% @sleep.each do |x| %>
-            <%= x.input %> (<%= x.count %> inputs);
+            <%= x.input %> (<%= x.count %> <%= x.txt %>)
         <% end %>
-        
+
         <%= form_with model: @input do |f| %>
             <%= f.text_field :input %>
             <%= f.submit "Submit" %>

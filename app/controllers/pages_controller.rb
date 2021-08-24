@@ -10,12 +10,13 @@ class PagesController < ApplicationController
         if Sleep.exists?(input: sleep_params[:input])
             @sleep = Sleep.find_by input: sleep_params[:input]
             if @sleep.update_attribute(:count, @sleep.count + 1)
+                @sleep.update_attribute(:txt, "inputs")
                 redirect_to '/'
             else
                 render 'edit'
             end
         else
-            @sleep = Sleep.new(sleep_params.merge(:count => 1))
+            @sleep = Sleep.new(sleep_params.merge({:count => 1, :txt => "input"}))
             if @sleep.save
                 redirect_to '/'
             else

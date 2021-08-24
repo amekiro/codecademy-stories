@@ -1,0 +1,5 @@
+<div id='gallery'>
+    <% @image.each do |x| %>
+        <%= link_to image_tag(x.image), gallery_path(x) %>
+    <% end %>
+</div>
