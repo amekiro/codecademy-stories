@@ -15,7 +15,7 @@ class PagesController < ApplicationController
                 render 'edit'
             end
         else
-            @sleep = Sleep.new(sleep_params.merge(:count => 0))
+            @sleep = Sleep.new(sleep_params.merge(:count => 1))
             if @sleep.save
                 redirect_to '/'
             else
