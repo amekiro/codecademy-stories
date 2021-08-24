@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_21_191707) do
+ActiveRecord::Schema.define(version: 2021_08_23_225703) do
 
   create_table "signups", force: :cascade do |t|
     t.string "firstname"
     t.string "email"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "sleeps", force: :cascade do |t|
+    t.integer "count"
+    t.string "input"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

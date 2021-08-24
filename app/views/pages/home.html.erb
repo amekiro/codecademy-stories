@@ -7,6 +7,16 @@
 <div class='sec'>
     <h1>Come join us in Miso's splootastic glory!</h1>
     <h2>Miso can hold over 100 different sleeping positions through a night. How many can you hold?</h2>
+    <div id='sleep'>
+        <% @sleep.each do |x| %>
+            <%= x.input %> (<%= x.count %> inputs);
+        <% end %>
+        
+        <%= form_with model: @input do |f| %>
+            <%= f.text_field :input %>
+            <%= f.submit "Submit" %>
+        <% end %>
+    </div>
 </div>
 <div class='sec' id='miso'>
 </div>
