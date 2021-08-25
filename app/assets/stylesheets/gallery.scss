@@ -23,3 +23,19 @@
 #description {
     text-align: center;
 }
+
+#prev {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    width: 120px;
+    text-align: center;
+}
+
+#next {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 120px;
+    text-align: center;
+}

@@ -1,6 +1,14 @@
+<% unless  @image.id == Gallery.first.id   %>
+    <%= link_to 'Previous', Gallery.get_previous_img(@image), :id => 'prev', :class => 'learn' %>
+<% end %>
+
 <div id='img-frame'>
     <%= image_tag @image.image %>
 </div>
 <div id='description'>
     Miso at <%= @image.age %>
 </div>
+
+<% unless  @image.id == Gallery.last.id   %>
+    <%= link_to  'Next', Gallery.get_next_img(@image), :id => 'next', :class => 'learn' %>
+<% end %>
